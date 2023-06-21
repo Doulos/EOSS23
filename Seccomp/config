@@ -32,4 +32,5 @@ lxc.mount.entry = /sys/kernel/security sys/kernel/security none ro,bind,optional
 
 lxc.init.cmd = /usr/sbin/emptyinit
 
+#Added line to load seccomp profile file
 lxc.seccomp.profile = /var/lib/lxc/emptycontainer2/allow.profile

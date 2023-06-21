@@ -1,3 +1,5 @@
+/* simple program to run as daemon to test systemd seccomp filtering */
+
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/utsname.h>

@@ -1,3 +1,5 @@
+/* placeholder empty init program for container */
+
 #include <stdio.h>
 #include <unistd.h>
 
