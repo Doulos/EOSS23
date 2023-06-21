@@ -3,6 +3,7 @@ Examples and sources for Doulos EOSS23 presentations:
 
 Threads in Embedded Linux - 6 Easy Pieces by Loïc Domaigné
 https://sched.co/1LcQf
+
 Designing to the Worst Case Scenario - Practical System Call Filtering with Seccomp by Simon Goda
 https://sched.co/1LcQc
 
