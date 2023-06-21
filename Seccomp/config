@@ -1,0 +1,35 @@
+# Template used to create this container: /usr/share/lxc/templates/lxc-busybox
+# Parameters passed to the template:
+# Template script checksum (SHA-1): 08be7018b6b2a1b341bab722f40598f7717493d7
+# For additional config options, please look at lxc.container.conf(5)
+
+# Uncomment the following line to support nesting containers:
+#lxc.include = /usr/share/lxc/config/nesting.conf
+# (Be aware this has security implications)
+
+#lxc.net.0.type = veth
+#lxc.net.0.link = lxcbr0
+#lxc.net.0.flags = up
+#lxc.net.0.name = eth0
+#lxc.net.0.ipv4.address = 10.0.3.10
+lxc.rootfs.path = dir:/var/lib/lxc/emptycontainer/rootfs
+lxc.signal.halt = SIGUSR1
+lxc.signal.reboot = SIGTERM
+lxc.uts.name = "emptycontainer2"
+lxc.tty.max = 1
+lxc.pty.max = 1
+lxc.cap.drop = sys_module mac_admin mac_override sys_time
+
+# When using LXC with apparmor, uncomment the next line to run unconfined:
+#lxc.apparmor.profile = unconfined
+
+lxc.mount.auto = cgroup:mixed proc:mixed sys:mixed
+lxc.mount.entry = shm dev/shm tmpfs defaults,create=dir 0 0
+lxc.mount.entry = mqueue dev/mqueue mqueue defaults,optional,create=dir 0 0
+lxc.mount.entry = /lib lib none ro,bind 0 0
+lxc.mount.entry = /usr/lib usr/lib none ro,bind 0 0
+lxc.mount.entry = /sys/kernel/security sys/kernel/security none ro,bind,optional 0 0
+
+lxc.init.cmd = /usr/sbin/emptyinit
+
+lxc.seccomp.profile = /var/lib/lxc/emptycontainer2/allow.profile

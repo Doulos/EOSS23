@@ -1,0 +1,13 @@
+[Unit]
+Description=Test Service
+After=network.target
+
+[Service]
+User=root
+Group=root
+ExecStart=/home/user0/eoss/test
+#SystemCallFilter=~uname
+#SystemCallErrorNumber=EACCES
+
+[Install]
+WantedBy=multi-user.target
