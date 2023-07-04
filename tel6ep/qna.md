@@ -19,10 +19,9 @@ Looking at the C11 thread APIs, it seems relatively straightforward to move from
 Of course, you might want to verify the behaviour using the table mentioned during the talk.
 
 ### priority inheritance mutex (aka. PI-mutex) is not available in glibc/musl.
-
 I'm a bit surpised by this statement. From my understanding, PI-mutex are available in glibc and musl.
 However a proper kernel support is required: it should provide the PI futex interface.
 
 I need to dig deeper on this... Stay tuned!
 
-**Further Questions or feedbacks? Contact us!**
+### Further Questions or feedbacks? Contact us!
