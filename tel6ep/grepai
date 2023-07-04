@@ -1,0 +1,12 @@
+grepai() {
+	case $1 in
+		*exit_group*) 
+			grep -R "exit" | grep main
+		;;
+		*printf*)
+			grep -R "int __lockfile"
+			cat src/stdio/__lockfile.c
+		;;
+
+	esac
+}
