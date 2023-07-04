@@ -1,7 +1,6 @@
-## Doulos Embedded Linux Trainings 
+## Looking for great embedded Linux trainings?
 
-Looking for great training on embedded Linux? 
-Check out:
+Check out the following course from [Doulos](https://www.doulos.com):
 - [Developping with Embedded Linux](https://www.doulos.com/training/arm-and-embedded-software/linuxyocto/developing-with-embedded-linux-online/)
 - [Practical Embedded Linux Device Drivers](https://www.doulos.com/training/arm-and-embedded-software/linuxyocto/practical-embedded-linux-device-drivers-online/)
 - [Designing Embedded Systems with Yocto](https://www.doulos.com/training/arm-and-embedded-software/linuxyocto/designing-embedded-systems-with-yocto-online/)
