@@ -41,7 +41,7 @@ Once you manage to deadlock the program, you can either use strace or gdb from a
 ### Using grepai 
 [<img src="./ai_meme.jpg" height="250" align="right"/>](ai_meme.jpg)
 To use grepai on the musl source, simply:
-- source grepai
+- source aitool
 - go to the top musl source directory
 - ask grepai.
 
